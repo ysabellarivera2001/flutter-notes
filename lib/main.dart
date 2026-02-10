@@ -8,12 +8,20 @@ void main() {
       //const helps the Flutter stay in memory 
       //so that it just calls it from memory instead of 
       //creating new instance, saving on memory
-  runApp(
-    MaterialApp(
+  runApp(const MyApp()); 
+}
+
+// Create a MyApp widget that wraps everything
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color.fromARGB(255, 238, 234, 161), //Colors.amberAccent
-        body: StatelessGradient()
-      )
-    )
-  ); 
+        backgroundColor: Color.fromARGB(255, 238, 234, 161),
+        body: const StatelessGradient(),
+      ),
+    );
+  }
 }
