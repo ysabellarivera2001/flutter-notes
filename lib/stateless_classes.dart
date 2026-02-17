@@ -1,4 +1,3 @@
-import 'package:_sample_proj/styledText.dart';
 import 'package:flutter/material.dart';
 
 // Main Stateless Widget
