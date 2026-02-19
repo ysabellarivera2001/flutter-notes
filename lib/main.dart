@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         backgroundColor: Color.fromARGB(255, 238, 234, 161),
-        body: const StatelessGradient(),
+        body: StatelessGradient(),
       ),
     );
   }
